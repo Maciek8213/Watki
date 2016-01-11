@@ -28,23 +28,24 @@ public class Glowne{
 			komenda=input.nextLine();	
 			if(komenda.equals("1"))
 			{	
-				Future <String> fut =exe.submit(new Watek(2, "warszawa", "ulgowy" , nazwa_watku(numer_watku), "rezerwuj"));
+				exe.submit(new Watek(2, "warszawa", "ulgowy" , nazwa_watku(numer_watku), "rezerwuj"));
+				
 			}
 			else if(komenda.equals("2"))
-			{
-				Future <String> fut =exe.submit(new Watek(3, "krakow", "ulgowy", nazwa_watku(numer_watku),"rezerwuj"));
+			{	
+				exe.submit(new Watek(3, "krakow", "ulgowy", nazwa_watku(numer_watku),"rezerwuj"));
 			}
 			else if(komenda.equals("3"))
 			{
-				Future <String> fut =exe.submit(new Watek(4, "szczecin", "ulgowy", nazwa_watku(numer_watku),"rezerwuj"));
+				exe.submit(new Watek(4, "szczecin", "ulgowy", nazwa_watku(numer_watku),"rezerwuj"));
 			}
 			else if(komenda.equals("4"))
 			{
-				Future <String> fut =exe.submit(new Watek(10, "tarnow", "ulgowy" , nazwa_watku(numer_watku),"rezerwuj"));
+				exe.submit(new Watek(10, "tarnow", "ulgowy" , nazwa_watku(numer_watku),"rezerwuj"));
 			}
 			else if(komenda.equals("5"))
 			{
-				Future <String> fut =exe.submit(new Watek(1, null, null , null,"wyswietl"));
+				exe.submit(new Watek(1, null, null , null,"wyswietl"));
 				
 			}
 			numer_watku++;
